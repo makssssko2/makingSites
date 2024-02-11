@@ -1,0 +1,55 @@
+/*Information*/
+.page {
+
+    &__information {
+        padding-top: 88px;
+        padding-bottom: 141px;
+        background-color: var(--gray-2);
+    }
+}
+.information {
+
+    &__graphic {
+        width: 100%;
+    }
+
+    &__graphic img{
+        width: 100%;
+    }
+
+    &__container {
+    }
+
+    &__body {
+        .flex-row(15px);
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 45px;
+    }
+
+    &__title {
+        .font_set(38*100%/31,31px,@letter-spacing: 1.2px,@color:  var(--title-green),@font-family: 'Libre Baskerville' );
+        max-width: 424px;
+    }
+
+    &__info {
+    }
+}
+.info {
+    max-width: 559px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 36px;
+    column-gap: 48px;
+    &__item {
+    }
+
+    &__title {
+        .font_set(24*100%/15,15px,@color:  var(--title-green));
+    }
+
+    &__text {
+        .font_set(24*100%/15,15px,@color:  var(--subtitle-green));
+    }
+}

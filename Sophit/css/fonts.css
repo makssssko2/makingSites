@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Playfair+Display:wght@500;700;800&display=swap');
+
+
+.presentation p, .section_header h2, .side_nav h2, .prod_header, .footer h4, .prod_name, .header_nav p, .header_nav li{
+    font-family: 'Playfair Display', serif;
+}
+
+.side_nav div, .prod_cost, .buy_button, .prod_descript, .gmail a,.tele p,.addr p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.about_info h4{
+    font-family: 'Playfair Display', serif;
+    font-size:25px;
+}
+
+.about_info p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+

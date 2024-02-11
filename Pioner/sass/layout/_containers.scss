@@ -1,0 +1,13 @@
+.wrapper{
+    @include flex_column(80px);
+    padding-top: 32px;
+}
+.container{
+    max-width: $container-width + px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page{
+    @include flex_column(80px);
+}

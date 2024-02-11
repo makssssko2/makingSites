@@ -1,0 +1,50 @@
+/*Forest*/
+.page {
+
+    &__forest {
+        padding-top: 247px;
+        padding-bottom: 247px;
+        position: relative;
+        background-color: var(--darker-green);
+    }
+}
+.forest {
+
+    &__container {
+        max-width: 542px;
+    }
+
+    &__body {
+    }
+
+    &__info{
+        .flex-column(21px);
+    }
+
+    &__title {
+        .font_set(22*100%/22,22px,@color: var(--white));
+    }
+
+    &__text {
+        .font_set(24*100%/15,15px,@color: var(--white));
+    }
+
+    &__right-bg, &__left-bg{
+        height: 100%;
+        width: 287px;
+        position: absolute;
+        top: 0;
+    }
+
+    &__left-bg {
+        left: 0;
+    }
+
+    &__right-bg {
+        right: 0;
+    }
+    &__right-bg img, &__left-bg img{
+        height: inherit;
+        width: inherit;
+    }
+}

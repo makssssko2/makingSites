@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Верхняя часть сайта HEADER*/
+.header{
+    width: 100%;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;  
+}
+.header .presentation{
+    height: 105px;
+    padding-bottom:10px;
+    margin:25px;
+
+    text-align: center;
+
+    position: relative;
+
+    background: #BACDD2;
+    
+}
+
+.header .presentation img{
+    margin-top: 15px;
+    height: 60px;
+}
+
+.header .presentation p{
+    line-height:30px;
+    font-weight: bold;
+}
+/*Верхняя навигационная панель HEADER_NAV*/
+.header .header_nav{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_nav .main_puncts{
+    margin-left:265px;
+
+    display: flex;
+    align-items: center;
+}
+
+.header_nav .main_puncts ul{
+    display: flex;
+    list-style: none;
+}
+
+.header_nav .main_puncts ul li{
+    padding: 7px 12px;
+
+    cursor: pointer;
+    
+    font-weight: bold;
+}
+
+.header_nav .main_puncts ul li a{
+    text-decoration: none;
+    color:black;
+}
+
+.header_nav .main_puncts ul li:hover{
+    box-shadow: 0 2px #45585D;
+
+    transition: 0.3s;
+}
+
+.header_nav .main_puncts ul input{
+    margin-right: 20px;
+    height:25px;
+}
+
+.header_nav .main_puncts ul li:not(:last-of-type){
+    margin-right:70px;
+}
+
+.header_nav .sub_puncts{
+    height: 40px;
+    margin-right: 25px;
+    width:fit-content;
+
+    display: flex;
+    align-items: center;
+}
+
+.header_nav .sub_puncts div:not(:last-of-type){
+    margin-right: 40px;
+}
+
+.header_nav #basket,#favourites{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.header_nav #basket div,#favourites div{
+    height:13px;
+    width:13px;
+
+    position: absolute;
+    left:17px;
+    bottom: 22px;
+
+    background:#45585D;
+
+    font-size: 11px;
+    color:#CFD0D0;
+    text-align: center;
+
+    border-radius: 50%;
+}
+
+.header_nav .sub_puncts p{
+    height: 36px;
+    padding: 2px 5px;
+
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.header_nav .sub_puncts img{
+    height:25px;
+    width:25px;
+    padding: 2px 2px;
+}
+
+.header_nav .sub_puncts #basket:hover,#favourites:hover{
+    box-shadow: 0 2px #45585D;
+
+    transition: 0.3s;
+}
+/*Основная часть сайта MAIN*/
+.main{
+    display: flex;
+}
+/*Информативная часть основной части сайта SECTION*/
+.section{
+    height:1200px;
+    width: 85%;
+    margin:25px 25px 0 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Боковая навигационная панель боковой части сайта*/
+.side_nav{
+    height: 1200px;
+    width: 160px;;
+    margin: 25px;
+    padding-left:12px;
+    padding-top:16px;
+    padding-right: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+    background: #BACDD2;
+}
+
+.side_nav h2{
+    margin-bottom: 25px;
+
+    font-size: 30px;
+}
+
+.side_nav p{
+    height:20px;
+
+    line-height:20px;
+    text-align: left;
+}
+.side_nav div{
+    padding: 10px 2px;
+
+    border-top: 3px #45585D solid;
+}
+
+.side_nav div:last-of-type{
+    border-bottom: 3px #45585D solid;
+}
+.side_nav div:hover{
+   font-weight: bold;
+}
+
+.side_nav a{
+    text-decoration:none;
+    color: rgb(32, 31, 31);
+    font-size:19px;
+}
+/*Шапка информативной части сайта SECTION_HEADER*/
+.section_header{
+    width: 100%;
+    height: 60px;
+    padding-top: 4px;
+    border-bottom: 3px #45585D solid;
+
+    font-size: 20px;
+    line-height: 60px;
+}
+/*Главный раздел информативной части ABOUT_INFO*/
+.section .about_info{
+    width:90%;
+    margin: 50px 20px 10px 20px;  
+
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+
+}
+.section .about_info div{
+    height: fit-content;
+    width:400px;
+    padding:10px;
+
+    border-radius:4%;
+}
+
+.section .about_info div h4{
+    width:98%;
+    padding: 6px 0;
+    margin-bottom:20px;
+
+    color: black;
+    
+    border-bottom:#45585D 3px solid;
+}
+
+.section .about_info div p{
+    color: black;
+}
+
+/*Подвал информативной части SECTION_FOOTER*/
+.section_footer{
+    height:450px;
+    width:90%;
+    margin: 0 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.section_footer #black_box_logo{
+    height:100%;
+
+    opacity: 0.8;
+
+    border:dashed 3px #45585D;
+}
+
+.section_footer #office_logo{
+    height:80%;
+
+    opacity:0.8;
+
+    border:dashed 3px #45585D;
+}
+/*Нижняя часть сайта - подвал FOOTER*/
+.footer{
+    height:140px;
+    margin:25px;
+    padding:10px;
+    padding-left: 15px;
+
+    background: #BACDD2;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer h4{
+    margin-bottom: 7px;
+
+    font-size: 18px;
+}
+
+.footer .presentation_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .presentation_footer img{
+    height: 60px;
+}
+
+.footer div:not(:last-of-type){
+    margin-right: 40px;
+    padding-right:40px;
+
+    border-right:3px #45585D solid;
+}
+
+.footer div{
+    height:100px;
+
+    display: flex;
+    justify-content: top;
+    align-items: left;
+    flex-direction: column;
+}
+
+.footer a{
+    color:black;
+    text-decoration: none;
+}
+
+.footer .addr p::before{
+    content: "● ";
+    color:  #45585D;
+}

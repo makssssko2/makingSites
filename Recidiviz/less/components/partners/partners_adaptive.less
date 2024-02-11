@@ -1,0 +1,43 @@
+.page {
+
+    &__partners {
+    }
+}
+.partners {
+
+    &__container {
+    }
+
+    &__body {
+        @media (max-width:@breakpoint-1){
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+    }
+
+    &__row {
+        @media (max-width: @breakpoint-5){
+            min-width: 213px;
+        }
+        @media (max-width: (@breakpoint-5 - 50px)){
+            min-width: 173px;
+        }
+    }
+
+    &__column {
+        @media (max-width: @breakpoint-5){
+            flex-basis: 100px;
+        }
+        @media (max-width: (@breakpoint-5 - 50px)){
+            flex-basis: 80px;
+        }
+    }
+
+    &__img {
+    }
+
+    &__allBtn {
+    }
+}

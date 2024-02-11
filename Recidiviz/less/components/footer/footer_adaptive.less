@@ -1,0 +1,123 @@
+.footer {
+
+    &__links {
+        @media (max-width: @breakpoint-5){
+            padding: 40px 0;
+            
+        }
+    }
+}
+.links {
+
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__row {
+        @media (max-width: @breakpoint-3){
+            justify-content: space-between;
+            column-gap: 10px;
+        }
+        @media (max-width: @breakpoint-5){
+            row-gap: 15px;
+            
+        }
+    }
+
+    &__column {
+        @media (max-width: @breakpoint-5){
+            flex-basis: calc(50%-10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        &:last-child{
+            @media (max-width: @breakpoint-3){
+                flex-grow: 0;
+                margin-right: 0;
+            }
+            @media (max-width: @breakpoint-5){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+            }
+        }
+    }
+
+    &__item {
+    }
+}
+.item-links {
+    
+    &__dDList,&__btn{
+        @media(max-width: @breakpoint-5){
+            display: block;
+        }
+    }
+    
+    &__list {
+        @media(max-width: @breakpoint-5){
+            display: none;
+        }
+    }
+
+    &__title {
+        @media(max-width: @breakpoint-5){
+            display: none;
+        }
+    }
+}
+.item-liks {
+
+    &__link {
+    }
+}
+
+.footer {
+
+    &__postScript {
+    }
+}
+.postScript {
+
+    &__container {
+    }
+
+    &__body {
+        @media (max-width: @breakpoint-5){
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 10px;
+        }
+    }
+
+    &__logo {
+    }
+
+    &__info {
+        @media (max-width: @breakpoint-5){
+            
+        }
+    }
+
+    &__links {
+        @media (max-width: @breakpoint-5){
+            margin-left: 0;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 8px;
+        }
+    }
+
+    &__link {
+    }
+
+    &__company {
+    }
+}
+.container {
+}

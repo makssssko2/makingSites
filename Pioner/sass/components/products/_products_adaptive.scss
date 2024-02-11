@@ -1,0 +1,58 @@
+.page {
+
+    &__products {
+    }
+}
+.products {
+
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__title {
+    }
+
+    &__row {
+    }
+
+    &__column {   
+    }
+
+    &__item {
+    }
+}
+.item {
+    @include sm_screen(){
+        padding: 28px 20px;
+    }
+    &__image {
+        @include xs_screen(){
+            height: 120px;
+            margin-bottom: 15px;
+        }
+    }
+    &__image img{
+        @include xs_screen(){
+            max-width: calc(200*100%/332);
+        }
+    }
+
+    &__title {
+        @include md_screen(){
+            font-size: 24px;
+        }
+        @include xs_screen(){
+            font-size: 20px;
+        }
+    }
+
+    &__description{
+    }
+    &__description span{
+    }
+
+    &__more, &__description { 
+    }
+}

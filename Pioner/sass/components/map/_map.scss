@@ -1,0 +1,32 @@
+.page {
+
+    &__map {
+    }
+}
+.map {
+
+    &__container {
+    }
+
+    &__body {
+        @include flex_column(32px);
+    }
+
+    &__title {
+        // @include font_set(120%,48px,var(--dark),700);
+        @extend %title_text;
+    }
+
+    &__image {
+    }
+
+    &__map1 {
+    }
+
+    &__map2 {
+        display: none;
+    }
+    &__map1, &__map2 {
+        margin: 0 auto;
+    }
+}

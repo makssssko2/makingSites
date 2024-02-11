@@ -1,0 +1,83 @@
+.header {
+
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__head {
+        @include xs_screen(){
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+
+    &__logo {
+    }
+
+    &__contacts {
+    }
+
+    &__menu {
+    }
+}
+.contacts {
+
+    &__row {
+        @include md_screen(){
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        @include xs_screen(){
+            text-align: center;
+        }
+    }
+
+    &__item {
+    }
+
+    &__text {
+    }
+
+    &__mail {
+    }
+
+    &__telephone {
+    }
+}
+.menu {
+    @include sm_screen(){
+        flex-direction: column;
+        row-gap: 20px;
+
+    }
+    &__links {
+        @include sm_screen(){
+            column-gap: 35px;
+            justify-content: center;
+    
+        }
+    }
+
+    &__link {
+        @include xl_screen{
+            flex-basis: calc(100%/8);
+            min-width:  calc(100%/8);
+        }
+        @include l_screen{
+            flex-basis: calc(100%/5);
+            min-width:  calc(100%/5);
+        }
+        @include md_screen{
+            flex-basis: calc(100%/3);
+            min-width:  calc(100%/3);
+        }
+    }
+
+    &__call-btn {
+    }
+
+    &__call-logo {
+    }
+}

@@ -1,0 +1,53 @@
+/*Header*/
+
+.header {
+    color: var(--white);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    &__container{
+        padding-top: 17px;
+    }
+
+    &__body{
+        .flex-row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__logo {
+    }
+
+    &__nav {
+        .font_set(auto,13px);
+        .flex-row(32px);
+        height: 100%;
+    }
+
+    &__links {
+        .flex-row(51px);
+        align-items: center;
+    }
+    &__link {
+        cursor: pointer;
+    }
+    &__link,&__login{
+        &:hover{
+            color: var(--green);
+            transition: 0.3s;
+        }
+    }
+    &__login {
+        font-size: 12px;
+    }
+
+    &__burger{
+        display: none;
+        height: 26px;
+        width: 26px;
+        border-radius: 50%;
+        background: var(--white);
+    }
+    
+}

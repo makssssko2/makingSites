@@ -1,0 +1,56 @@
+.page {
+
+    &__information {
+        @media (max-width: @breakpoint-3){
+            padding-top: 70px;
+            padding-bottom: 90px;
+        }
+    }
+}
+.information {
+
+    &__graphic {
+    }
+
+    &__container {
+    }
+
+    &__body {
+        @media (max-width: @breakpoint-3){
+            row-gap: 32px;
+        }
+    }
+
+    &__title {
+        @media (max-width: @breakpoint-3){
+            font-size: 26px;
+        }
+        @media (max-width: @breakpoint-4){
+            font-size: 22px;
+        }
+    }
+
+    &__info {
+    }
+}
+.info {
+    @media (max-width: @breakpoint-3){
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4,auto);
+        row-gap: 20px;
+    }
+    &__item {
+    }
+
+    &__title {
+        @media (max-width: @breakpoint-4){
+            font-size: 13px;
+        }
+    }
+
+    &__text {
+        @media (max-width: @breakpoint-4){
+            font-size: 13px;
+        }
+    }
+}

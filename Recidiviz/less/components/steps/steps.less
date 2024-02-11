@@ -1,0 +1,73 @@
+/*Steps*/
+.page {
+
+    &__steps {
+        padding-top: 120px;
+        padding-bottom: 141px;
+    }
+}
+.steps {
+
+    &__container {
+        max-width: 778px;
+    }
+
+    &__body {
+        .flex-column(57px);
+    }
+
+    &__title {
+        text-align: center;
+        .font_set(38*100%/30,30px,400,1.2px,var(--title-green),'Libre Baskerville');
+    }
+
+    &__row {
+        .flex-row(7.5px);
+        counter-reset: steps 0;
+    }
+
+    &__column {
+        flex:0 1 126px;
+        &_dif{
+            min-width: 176px;
+        }
+    }
+
+
+    &__item {
+        .flex-column(19px);
+        align-items: center;
+        &:before{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            counter-increment: steps;
+            content: counter(steps);
+            width: 48px;
+            height: 48px;
+            .font_set(30*100%/16,16px,@color: var(--white));
+            border-radius: 50%;
+            background-color: var(--steps-green);
+        }
+        &_line{
+            position: relative;
+            &:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 40px;
+                display: block;
+                width: 100%;
+                height: 1px;
+                background-color: rgba(53, 83, 98, 0.20);
+            }
+           
+        }
+    }
+}
+.item {
+    &__title {
+        text-align: center;
+        .font_set(24*100%/15,15px,400,@color: var(--subtitle-green));
+    }
+}

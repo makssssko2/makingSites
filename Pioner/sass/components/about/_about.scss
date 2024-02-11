@@ -1,0 +1,45 @@
+.page {
+
+    &__about {
+    }
+}
+.about {
+
+    &__container {
+    }
+
+    &__body {
+        @include flex_column(32px);
+    }
+
+    &__title {
+        @extend %title_text;
+    }
+
+    &__info {
+        @include flex_row(20px);
+        flex-wrap: wrap;
+        row-gap: 24px;
+    }
+
+    &__text {
+        @include font_set(140%,16px,var(--dark),400);
+        flex-basis: round(580 * 100%/ $container-width);
+    }
+
+    &__images {
+        @include flex_row(20px);
+        flex-wrap: wrap;
+    }
+
+    &__image {
+        flex-basis: round(580 * 100% / $container-width);
+        height: 280px;
+        img{
+            height: 100%;
+            object-fit: cover;
+
+        }
+    }
+
+}

@@ -1,0 +1,34 @@
+.page {
+
+    &__map {
+    }
+}
+.map {
+
+    &__container {
+    }
+
+    &__body {
+        @include sm_screen(){
+            row-gap: 20px;
+        }
+    }
+
+    &__title {
+    }
+
+    &__image {
+    }
+
+    &__map1 {
+        @include md_screen(){
+            display: none;
+        }
+    }
+
+    &__map2 {
+        @include md_screen(){
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+/*Mixins*/
+
+.flex-row(@gap){
+    column-gap: @gap;
+    &:extend(.flex-row);
+}
+.flex-column(@gap){
+    row-gap: @gap;
+    &:extend(.flex-column);
+}
+.font_set(@line-height,@font-size: 18px,@font-weight: 400,@letter-spacing: auto,@color: var(--dark),@font-family: 'Public Sans'){
+    color: @color;
+    font-size: @font-size;
+    font-weight: @font-weight;
+    line-height: @line-height;
+    letter-spacing: @letter-spacing;
+    font-family: @font-family, sans-serif;
+}
+.center(){
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,53 @@
+.page {
+
+    &__presentation {
+    }
+}
+.presentation {
+
+    &__container {
+    }
+
+    &__body {
+        @include sm_screen(){
+            row-gap: 20px;
+        }
+    }
+
+    &__info {
+        @include sm_screen(){
+            flex-direction: column;
+            row-gap: 12px;
+            align-items: flex-start;
+        }
+        
+    }
+
+    &__title {
+        @include sm_screen(){
+            flex-basis: auto;
+        }
+    }
+
+    &__text {
+        @include md_screen(){
+            font-size: 16px;
+        }
+        @include sm_screen(){
+            flex-basis: auto;
+            justify-self: normal;
+        }
+        @include xs_screen(){
+            font-size: 14px;
+        }
+    }
+
+    &__image {
+        @include sm_screen(){
+            height: auto;
+        }
+        
+    }
+}
+.container {
+}

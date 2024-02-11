@@ -1,0 +1,78 @@
+.header {
+
+    &__container {
+    }
+
+    &__body {
+        @extend %flex_column;
+    }
+
+    &__head {
+        @extend %flex_row;
+        justify-content: space-between;
+        padding-bottom: 36px;
+        border-bottom: 1px solid var(--gray);
+    }
+
+    &__logo {
+    }
+
+    &__contacts {
+        
+    }
+
+    &__menu {
+        padding-top: 16px;
+    }
+}
+.contacts {
+    text-align: right;
+    &__row {
+        @include flex_row(40px);
+    }
+
+    &__item {
+    }
+
+    &__text {
+        @include font_set(120%,14px);
+    }
+
+    &__mail, &__mail:link, &__mail:visited {
+        text-decoration: underline;
+    }
+
+    &__telephone {
+        
+    }
+    &__mail, &__telephone {
+        @include font_set(normal,20px,var(--accent),600);
+    }
+}
+.menu {
+    @include flex_row(10px);
+    align-items: center;
+    justify-content: space-between;
+
+    &__links {
+        @include flex_row(44px);
+        row-gap: 20px;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    // &__link{
+    //     flex-basis: calc(100%/8);
+    // }
+
+    &__call-btn {
+        min-width: 157px;
+        @include flex_row(4px);
+        align-items: center;
+        @include font_set(120%,inherit,var(--accent),400);
+        text-transform: uppercase;
+    }
+
+    &__call-logo {
+    }
+}
