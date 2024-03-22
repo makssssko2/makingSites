@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Ink.house</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <img src="img/Star 1.svg" alt="Logo">
+                <h3>Ink. House</h3>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__nav">
+                    <li class="header__item"><a href="#" class="header__link">Репродукции</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Новинки</a></li>
+                    <li class="header__item"><a href="#" class="header__link">О нас</a></li>
+                </ul>
+                <button class="burger">
+                    <span class="burger__line"></span>
+                </button>
+                <button class="header__cart"><img src="img/shopping-cart.svg" alt="Cart"></button>
+            </nav>
+        </div> 
+    </header>
+    <main class="page">
+        <section class="page__hero hero">
+            <div class="hero__container container">
+                <div class="hero__image"><img src="img/Hero.png" alt="Hero"></div>
+                <div class="hero__main">
+                    <article class="hero__info">
+                        <h1 class="hero__title">Реплики картин от <span>Ink. House</span></h1>
+                        <p class="hero__description">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
+                    </article>
+                    <button class="hero__products"><a href="#">Продукция</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="page__catalog catalog">
+            <div class="catalog__container container">
+                <div class="catalog__header">
+                    <h2 class="catalog__title">Репродукции</h2>
+                    <div class="catalog__btns">
+                        <button class="catalog__btn catalog__btn_active" data-country="France">Франция</button>
+                        <button class="catalog__btn" data-country="Germany">Германия</button>
+                        <button class="catalog__btn" data-country="England">Англия</button>
+                    </div>
+                </div>
+                <div class="catalog__products">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="page__news news">
+            <div class="news__container container">
+                <article class="news__info">
+                    <div class="news__head">
+                        <img src="./img/Star 2.svg" alt="STAR">
+                        <h2 class="news__title">Новая коллекция французских авторов</h2>
+                    </div>
+                    <p class="news__text">Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.</p>
+                    <p class="news__text">Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.</p>
+                </article>
+                <button class="news__moreBtn">Ознакомиться</button>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <script type ="module" src="./js/catalog.js"></script>
+    <script type ="module" src="./js/burger.js"></script>
+    <script type ="module" src="./js/script.js"></script>
+</body>
+</html>

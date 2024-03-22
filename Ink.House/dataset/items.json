@@ -1,0 +1,146 @@
+[
+    {
+        "country": "France",
+        "source": "./../../img/01.jpg",
+        "title": "Охота Амура",
+        "author": "Марсель Руссо",
+        "price": "14 500",
+        "materials": "Холст, масло (50х80) " 
+    },
+    {
+        "country": "France",
+        "source": "./../../img/02.jpg",
+        "title": "Дама с собачкой",
+        "author": "Анри Селин",
+        "price": "16 500",
+        "materials": "Холст, масло (50х80) " 
+    },
+    {
+        "country": "France",
+        "source": "./../../img/03.jpg",
+        "title": "Процедура",
+        "author": "Франсуа Дюпон",
+        "price": "20 000",
+        "materials": "Цветная литография (40х60) " 
+    },
+    {
+        "country": "France",
+        "source": "./../../img/04.jpg",
+        "title": "Роза",
+        "author": "Луи Детуш",
+        "price": "12 000",
+        "materials": "Бумага, акрил (50х80) " 
+    },
+    {
+        "country": "France",
+        "source": "./../../img/05.jpg",
+        "title": "Птичья трапеза",
+        "author": "Франсуа Дюпон",
+        "price": "22 500",
+        "materials": "Цветная литография (40х60) " 
+    },
+    {
+        "country": "France",
+        "source": "./../../img/06.jpg",
+        "title": "Пейзаж с рыбой",
+        "author": "Пьер Моранж",
+        "price": "20 000",
+        "materials": "Цветная литография (40х60) " 
+    },
+    {
+        "country": "Germany",
+        "source": "./../../img/11.jpg",
+        "title": "Над городом",
+        "author": "Курт Вернер",
+        "price": "16 000",
+        "materials": "Цветная литография (40х60) " 
+    },
+    {
+        "country": "Germany",
+        "source": "./../../img/12.jpg",
+        "title": "Птенцы",
+        "author": "Макс Рихтер",
+        "price": "14 500",
+        "materials": "Холст, масло (50х80) " 
+    },
+    {
+        "country": "Germany",
+        "source": "./../../img/13.jpg",
+        "title": "Среди листьев",
+        "author": "Мартин Майер",
+        "price": "20 000",
+        "materials": "Цветная литография (40х60) " 
+    },
+    {
+        "country": "Germany",
+        "source": "./../../img/14.jpg",
+        "title": "Яркая птица",
+        "author": "Герман Беккер",
+        "price": "13 000",
+        "materials": "Цветная литография (40х60) " 
+    },
+    {
+        "country": "Germany",
+        "source": "./../../img/15.jpg",
+        "title": "Дятлы",
+        "author": "Вульф Бауэр",
+        "price": "20 000",
+        "materials": "Бумага, акрил (50х80) " 
+    },
+    {
+        "country": "Germany",
+        "source": "./../../img/16.jpg",
+        "title": "Большие воды",
+        "author": "Вальтер Хартманн",
+        "price": "23 000",
+        "materials": "Бумага, акрил (50х80) " 
+    },
+    {
+        "country": "England",
+        "source": "./../../img/21.jpg",
+        "title": "Дикий зверь",
+        "author": "Пол Смит",
+        "price": "19 500",
+        "materials": "Акварель, бумага (50х80) " 
+    },
+    {
+        "country": "England",
+        "source": "./../../img/22.jpg",
+        "title": "Скалистый берег",
+        "author": "Джон Уайт",
+        "price": "27 500",
+        "materials": "Цветная литография (40х60) " 
+    },
+    {
+        "country": "England",
+        "source": "./../../img/23.jpg",
+        "title": "Река и горы",
+        "author": "Джим Уотсон",
+        "price": "20 500",
+        "materials": "Акварель, бумага (50х80) " 
+    },
+    {
+        "country": "England",
+        "source": "./../../img/24.jpg",
+        "title": "Белый попугай",
+        "author": "Юджин Зиллион",
+        "price": "15 500",
+        "materials": "Цветная литография (40х60) " 
+    },
+    {
+        "country": "England",
+        "source": "./../../img/25.jpg",
+        "title": "Ночная рыба",
+        "author": "Эрик Гиллман",
+        "price": "12 500",
+        "materials": "Бумага, акрил (50х80) " 
+    },
+    {
+        "country": "England",
+        "source": "./../../img/26.jpg",
+        "title": "Рыжий кот",
+        "author": "Альфред Барр",
+        "price": "21 000",
+        "materials": "Цветная литография (40х60) " 
+    }
+]

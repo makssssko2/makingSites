@@ -1,0 +1,73 @@
+.page {
+
+    // .page__news
+
+    &__news {
+        padding: rem(70) 0;
+    }
+}
+.news {
+    background-image: url(./../../img/pic_background.png);
+    color: var(--page-default-bg);
+    @include sm_screen(){
+        background-position: top right;
+    }
+    // .news__container
+    &__container{
+        @include flex_column(rem(60));
+        align-items: flex-start;
+    }
+    // .news__info
+
+    &__info {
+        @include flex_column(rem(20));
+        max-width: rem(570);
+    }
+
+    // .news__head
+
+    &__head {
+        @include flex_row(rem(19));
+        @include font_set(100%,rem(40),inherit);
+        img {
+            width: em(80,40);
+        }
+        @include md_screen(){
+            font-size: rem(30);
+        }
+        @include sm_screen(){
+            font-size: rem(24);
+        }
+
+    }
+
+    // .news__title
+
+    &__title {
+        
+    }
+
+    // .news__text
+
+    &__text {
+        @include font_set(150%,rem(18),#FFF);
+        @include md_screen(){
+            font-size: rem(18);
+        }
+        @include sm_screen(){
+            font-size: rem(16);
+        }
+        
+    }
+
+    // .news__moreBtn
+
+    &__moreBtn {
+        @include font_set(normal,rem(20),var(--button-textColor));
+        padding: em(20,20) em(60,20);
+        background-color: var(--button-bg);
+        @include sm_screen(){
+            font-size: rem(18);
+        }
+    }
+}

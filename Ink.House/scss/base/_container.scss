@@ -1,0 +1,12 @@
+html{
+    font-size: $default-fs + px;
+    background-color: var(--page-default-bg);
+}
+.stop-scroll{
+    overflow: hidden;
+}
+.container{
+    max-width: calc(var(--container-width) + var(--container-padding) * 2);
+    padding: 0 var(--container-padding);
+    margin: 0 auto;
+}

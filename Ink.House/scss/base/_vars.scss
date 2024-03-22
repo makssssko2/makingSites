@@ -1,0 +1,29 @@
+// default html font-size (px)
+$default-fs: 18;
+
+// Media breakpoints
+$breakpoint-1: 1440px;
+$breakpoint-2: 1020px;
+$breakpoint-3: 790px;
+$breakpoint-4: 570px;
+$breakpoint-5: 420px;
+
+:root{
+    // Without padding container width
+    --container-width: 1110px;
+    // paddings
+    --container-padding: 15px;
+    --default-ff: 'Raleway', sans-serif;
+    --default-fw: 500;
+    --default-text-color: var(--dark-green);
+    
+    --background-green: #e1ede6;
+    --green: #598d66;
+    --dark-green: #2c2d35;
+    --olive-green: #86928b;
+    --page-default-bg: #F4F6F5;
+    --border-line: #c3d1c6;
+    --active-green: #376b44;
+    --button-bg: #eedb6d;
+    --button-textColor: #2c2d35;
+}
