@@ -58,6 +58,20 @@
             background-color: var(--active-green);
             color: #FFF;
         }
+
+        transition: 0.3s ease-in-out;
+        &:hover{
+            background-color: var(--green);
+            color: var(--page-default-bg);
+        }
+        &:active{
+            background-color: var(--active-btn-green);
+            color: var(--green);
+        }
+        &:focus{
+            background-color: var(--focus-btn-green);
+            color: #FFF;
+        }
     }
 
     // .catalog__products
@@ -157,6 +171,18 @@
         border: 1px solid var(--green);
         @include sm_screen(){
             font-size: rem(18);
+        }
+        
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background-color, color;
+        &:hover{
+            background-color: var(--green);
+            color: var(--page-default-bg);
+        }
+        &:active{
+            background-color: var(--active-btn-green);
+            color: var(--green);
         }
     }
 }

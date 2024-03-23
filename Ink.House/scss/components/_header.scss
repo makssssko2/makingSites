@@ -169,6 +169,16 @@
 
     &__link {
         cursor: pointer;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background-color, color;
+        &:hover{
+            color: var(--green);
+        }
+        &:active{
+            background-color: var(--degault-page-bg);
+            color: var(--default-text-color);
+        }
     }
 
     // .header__cart
@@ -179,6 +189,7 @@
         img{
             width: em(24,20);
             height: em(24,20);
+            cursor: pointer;
         }
     }
 }

@@ -95,6 +95,22 @@
             font-size: rem(18);
             padding: em(15,20) em(45,20);
         }
+
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        transition-property: background-color, color;
+        &:hover{
+            background-color: var(--green);
+            color: var(--page-default-bg);
+        }
+        &:active{
+            background-color: var(--active-btn-green);
+            color: var(--green);
+        }
+        &:focus{
+            background-color: var(--focus-btn-green);
+            color: #FFF;
+        }
     }
 }
 .container {

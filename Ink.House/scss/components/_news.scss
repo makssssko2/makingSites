@@ -38,6 +38,9 @@
         @include sm_screen(){
             font-size: rem(24);
         }
+        @include xs_screen(){
+           flex-wrap: wrap;
+        }
 
     }
 
@@ -68,6 +71,24 @@
         background-color: var(--button-bg);
         @include sm_screen(){
             font-size: rem(18);
+            padding: em(15,20) em(45,20);
+        }
+        @include xs_screen(){
+            padding: em(10,20) em(30,20);
+        }
+
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        transition-property: background-color, border;
+        &:hover{
+            background-color: var(#faeb97);
+        }
+        &:active{
+            border: 1px solid #a38314
+        }
+        &:focus{
+            background: #d9b949;
+            border: none;
         }
     }
 }
