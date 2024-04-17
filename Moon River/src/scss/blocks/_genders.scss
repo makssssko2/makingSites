@@ -1,0 +1,87 @@
+.page {
+
+    // .page__genders
+
+    &__genders {
+    }
+}
+.genders {
+
+    // .genders__container
+
+    &__container {
+        padding-top: rem(20);
+        padding-bottom: rem(20);
+        background-color: var(--main-color);
+        @include flex_row(rem(20));
+        height: rem(587);
+        @include md_screen() {
+            height: rem(420);
+        }
+    }
+
+    // .genders__gender
+
+    &__gender {
+    }
+}
+.gender {
+    flex-basis: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-inline: rem(5);
+
+    // .gender_man
+
+    &_man {
+        background-image: url('./../img/Formen.png');
+    }
+
+    // .gender_woman
+
+    &_woman {
+        background-image: url('./../img/Forwomen.png');
+    }
+
+    // .gender__container
+
+    &__container {
+        @include flex_column(rem(10));
+        align-items: center;
+        text-align: center;
+    }
+
+    // .gender__link
+
+    &__link {
+        @include font_set(normal,rem(24),var(--main-color),200);
+        @include md_screen() {
+            font-size: rem(20);
+        }
+        @include sm_screen() {
+            font-size: rem(18);
+        }
+        @include xs_screen() {
+            display: none;
+        }
+    }
+
+    // .gender__title
+
+    &__title {
+        @include font_set(normal,rem(64),var(--main-color),400,"Forum");
+        @include md_screen() {
+            font-size: rem(44);
+        }
+        @include sm_screen() {
+            font-size: rem(35);
+        }
+    }
+}

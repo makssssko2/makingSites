@@ -1,0 +1,111 @@
+.page {
+
+    // .page__products
+
+    &__products {
+    }
+}
+.products {
+
+    // .products__container
+
+    &__container {
+        padding-top: rem(20);
+        padding-bottom: rem(20);
+        background-color: var(--main-color);
+        display: grid;
+        grid-template-columns: minmax(auto,rem(400))  minmax(auto,rem(600))  minmax(auto,rem(400));
+        grid-template-rows: repeat(2,minmax(auto,rem(400)));
+        gap: rem(20);
+        justify-content: center;
+
+        @include l_screen() {
+            grid-template-columns: repeat(2,minmax(auto,rem(400)));
+            grid-template-rows: repeat(3,minmax(auto,rem(400)));
+        }
+        @include md_screen() {
+            grid-template-columns: repeat(1,minmax(auto,rem(400)));
+            grid-template-rows: repeat(5,minmax(auto,rem(400)));
+        }
+        
+    }
+
+    // .products__item
+
+    &__item {
+        background: var(--item-bg);
+        @include flex_column(rem(70));
+        justify-content: flex-end;
+        padding: rem(30);
+        @include sm_screen() {
+            row-gap: rem(40);
+        }
+    }
+}
+.item {
+    img {
+        max-width: rem(260);
+        align-self: center;
+        @include sm_screen() {
+            max-width: rem(200);
+        }
+    }
+
+    // .item_focus
+
+    &_focus {
+        background: url('./../img/productsPic.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+        @include md_screen() {
+            grid-row-start: auto;
+            grid-row-end: auto;
+            grid-column-start: auto;
+            grid-column-end: auto;
+        }
+
+        .item__title {
+            color: var(--main-color)
+        }
+    
+        // .item__desc
+    
+        .item__desc {
+            color: #e7e7e7;
+        }
+
+    }
+
+    // .item__info
+
+    &__info {
+        @include flex_column(rem(10));
+    }
+
+    // .item__title
+
+    &__title {
+        @include font_set(normal,rem(16),#000000,900);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    // .item__desc
+
+    &__desc {
+        @include font_set(normal,rem(18),var(--item-desc-color),300);
+    }
+
+    // .item__price
+
+    &__price {
+        @include font_set(normal,rem(18),var(--price-color),400);
+        font-style: italic;
+        letter-spacing: 0.03em;
+    }
+}

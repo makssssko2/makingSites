@@ -1,0 +1,118 @@
+.header {
+    position: absolute;
+    top: 0;
+    z-index: 222;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    &_show {
+        .header__logo {
+            #mainpart-logo {
+                transition: .8s ;
+                fill: #FFF;
+            }
+        }
+    }
+    // .header__container
+
+    &__container {
+        padding-top: rem(50);
+        padding-bottom: rem(50);
+        @include flex_row(rem(10));
+        justify-content: space-between;
+        align-items: center;
+        @include sm_screen(){
+            flex-direction: column;
+            row-gap: rem(20);
+        }
+
+        @include sm_screen() {
+            padding-top: rem(30);
+            padding-bottom: rem(30);
+        }
+    }
+
+    // .header__logo
+
+    &__logo {
+        max-width: rem(258);
+        #mainpart-logo {
+            transition: none ;
+        }
+
+    }
+
+    // .header__nav
+
+    &__nav {
+        @include flex_row(rem(60));
+        align-items: center;
+    }
+
+    // .header__menu
+
+    &__menu {
+        @include flex_row(rem(40));
+        img {
+            filter: drop-shadow(0 0 3px var(--background-gray));
+        }
+    }
+}
+.container {
+}
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: rem(30);
+    height: rem(30);
+    .burger__btn {
+        position: relative;
+        width: rem(30);
+        height: rem(2);
+        background-color: var(--main-color);
+        box-shadow: 0 0 3px 0 var(--background-gray);
+        &::before{
+            content: '';
+            width: rem(30);
+            height: rem(2);
+            background-color: var(--main-color);
+            position: absolute;
+            top: -10.5px;
+            left: 0;
+            transition: .2s ease-in-out;
+            box-shadow: 0 0 3px 0 var(--background-gray);
+        }
+        &::after{
+            content: '';
+            width: rem(30);
+            height: rem(2);
+            background-color: var(--main-color);
+            position: absolute;
+            top: 10.5px;
+            left: 0;
+            transition: .2s ease-in-out;
+            box-shadow: 0 0 3px 0 var(--background-gray);
+        }
+    }
+    &_active{
+        .burger__btn {
+            height: 0;
+            &::before{
+                transform: rotate(-45deg);
+                transform-origin: right;
+                
+            }
+            &::after{
+                transform: rotate(45deg);
+                transform-origin: right;
+            }
+        }
+    }
+}
+html{
+    @include sm_screen(){
+        background: linear-gradient(110deg,#FFF 66.6%,#272727 66.6%);
+    }
+}
+

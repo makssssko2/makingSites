@@ -4,22 +4,26 @@ function catalog(){
     
     const loadCatalog = async function(country){
         catalog.innerHTML = '';
-        let response = await fetch('./../../dataset/items.json')
-        let result = await response.json();
-        result.forEach((item) => {
-            if(item.country == country){
-                catalog.insertAdjacentHTML('beforeend',
-                `<div class="catalog__item item">
-                    <div class="item__image"><img src="${item.source}" alt="Painting"></div>
-                    <p class="item__author">${item.author}</p>
-                    <h3 class="item__title">${item.title}</h3>
-                    <p class="item__materials">${item.materials}</p>
-                    <p class="item__price">${item.price} руб</p>
-                    <button class="item__add">В корзину</button>
-                </div>`
-                );
-            }
-        })
+        try{
+            let response = await fetch('./../../dataset/items.json')
+            let result = await response.json();
+            result.forEach((item) => {
+                if(item.country == country){
+                    catalog.insertAdjacentHTML('beforeend',
+                    `<div class="catalog__item item">
+                        <div class="item__image"><img src="${item.source}" alt="Painting"></div>
+                        <p class="item__author">${item.author}</p>
+                        <h3 class="item__title">${item.title}</h3>
+                        <p class="item__materials">${item.materials}</p>
+                        <p class="item__price">${item.price} руб</p>
+                        <button class="item__add">В корзину</button>
+                    </div>`
+                    );
+                }
+            })
+        } catch(error){
+            console.log(error);
+        }
     }
     buttons.forEach((item) => {
         item.addEventListener('click',(event) => {

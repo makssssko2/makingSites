@@ -1,0 +1,161 @@
+.page {
+
+    // .page__hero
+
+    &__hero {
+        padding-top: rem(150);
+        padding-bottom: rem(60);
+        height: rem(780); 
+        background: linear-gradient(90deg,#FFF 66.6%,var(--background-gray) 66.6%);
+        @include sm_screen(){
+            background: linear-gradient(110deg,#FFF 66.6%,var(--background-gray) 66.6%);
+        }
+        @include md_screen() {
+            height: rem(850); 
+        }
+        @include sm_screen() {
+            height: rem(600);
+        }
+    }
+
+    // .page__langBtns
+
+    &__langBtns {
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        transition: none ;
+    }
+}
+.hero {
+    transition: .8s ;
+    // .hero_hide
+    &_hide {
+        background: var(--background-gray);
+        .hero__collection {
+            transition: .8s ;
+            opacity: 0;
+        }
+        .page__langBtns{
+            transition: .8s ;
+            opacity: 0;
+        }
+    }
+    // .hero__container
+
+    &__container {
+        position: relative;
+        @include flex_column(rem(10));
+        height: 100%;
+
+    }
+
+    // .hero__collection
+
+    &__collection {
+        transition: none ;
+        @include flex_row(rem(10));
+        margin-top: rem(150);
+        max-width: rem(900);
+        justify-content: space-between;
+        @include md_screen() {
+            flex-direction: column;
+            row-gap: rem(20);
+            margin-top: rem(110);
+        }
+    }
+}
+.container {
+}
+.collection {
+    // .collection__text
+
+    &__text {
+        @include flex_column(rem(66));
+        max-width: rem(450);
+        flex-grow: 1;
+
+    }
+
+    // .collection__title
+
+    &__title {
+        @include font_set(normal,rem(64),var(--main-color),400,'Forum');
+        mix-blend-mode: difference;
+    }
+
+    // .collection__more
+
+    &__more {
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        @include font_set(normal,rem(18),var(--main-color),300,'Fira Sans');
+        &::before{
+            content: '';
+            display: block;
+            width: rem(130);
+            height: rem(1);
+            background-color: var(--background-gray);
+        }
+        mix-blend-mode: difference;
+    }
+
+    // .collection__image
+
+    &__image {
+        @include sm_screen() {
+            display: none;
+        }
+        img {
+            max-width: rem(322);
+        }
+    }
+
+    // .collection__description
+
+    &__description {
+        @include sm_screen() {
+            display: none;
+        }
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+    }
+}
+.ring-desc {
+    // .ring-desc__title
+
+    &__title {
+        @include font_set(normal,rem(16),var(--main-color),900);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+    // .ring-desc__materials
+
+    &__materials {
+        @include font_set(normal,rem(18),var(--gray),300);
+        text-align: right;
+    }
+
+    // .ring-desc__price
+
+    &__price {
+        @include font_set(normal,rem(18),var(--price-color),300);
+        font-style: italic;
+        letter-spacing: 0.03em;
+        text-align: right;
+    }
+}
+.langBtn {
+
+    // .langBtn_active
+    @include font_set(normal,rem(16),var(--light-gray),900);
+
+    &_active {
+        color: var(--background-gray);
+    }
+}
