@@ -110,9 +110,4 @@
         }
     }
 }
-html{
-    @include sm_screen(){
-        background: linear-gradient(110deg,#FFF 66.6%,#272727 66.6%);
-    }
-}
 

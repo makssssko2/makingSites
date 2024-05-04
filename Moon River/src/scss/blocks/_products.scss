@@ -40,6 +40,10 @@
         @include sm_screen() {
             row-gap: rem(40);
         }
+        transition: .4s;
+        &:hover {
+            filter: brightness(80%);
+        }
     }
 }
 .item {
