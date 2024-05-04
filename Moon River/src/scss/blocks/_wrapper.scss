@@ -262,6 +262,7 @@
     &__input {
         width: 100%;
         @include font_set(normal,rem(18),var(--gray),300);
+        padding-right: rem(34);
     }
 
     // .wrap-footer__download
