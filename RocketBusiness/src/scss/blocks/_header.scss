@@ -1,0 +1,189 @@
+.header {
+
+    // .header__container
+
+    &__container {
+        @include flex_row(rem(10));
+        justify-content: space-between;
+        align-items: center;
+        padding-top: rem(12);
+        padding-bottom: rem(12);
+        @include xs_screen() {
+            flex-direction: column;
+            row-gap: rem(20);
+        }
+    }
+
+    // .header__left-part
+
+    &__left-part {
+        @include flex_row(rem(21));
+        @include l_screen() {
+            column-gap: rem(43);
+        }
+        @include xs_screen() {
+            width: 100%;
+            justify-content: space-between;
+        }
+    }
+
+    // .header__logo
+
+    &__logo {
+    }
+
+    // .header__geo
+
+    &__geo {
+        @include font_set(150%,rem(14));
+        padding-left: 20px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-image: url('./../img/geo.svg');
+            @include l_screen() {
+                display: none;
+            }
+        }
+
+        span {
+            color: var(--gray)
+        }
+        @include l_screen() {
+            display: none;
+        }
+    }
+
+    // header__geo2 
+
+    &__geo2 {
+        display: none;
+        @include l_screen() {
+            display: block;
+        }
+    }
+
+    // .header__right-part
+
+    &__right-part {
+        @include flex_row(rem(35));
+    }
+
+    // .header__contacts
+
+    &__contacts {
+        @include flex_row(rem(10));
+        @include l_screen() {
+            flex-direction: column;
+        }
+    }
+
+    // .header__whatsUp
+
+    &__whatsUp {
+        @include l_screen() {
+            display: none;
+        }
+    }
+
+    // .header__callLink
+
+    &__callLink {
+        @include font_set(150%);
+        @include l_screen() {
+            font-weight: 600;
+        }
+    }
+
+    // .header__reg
+
+    &__reg {
+        background-color: var(--light-green);
+        color: #FFF;
+        &:hover {
+            background-color: var(--hover-green);
+        }
+        @include l_screen() {
+            display: none;
+        }
+    }
+}
+.container {
+}
+
+.header {
+
+    // .header__burger
+
+    &__burger {
+        width: rem(37);
+        height: rem(26);
+    }
+}
+.burger {
+    display: none;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: rem(37);
+        height: rem(4);
+        background-color: var(--light-green);
+        transition: transform .5s;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        display: block;
+        width: rem(37);
+        height: rem(4);
+        background-color: var(--light-green);
+        transition: transform .5s;
+    }
+
+    // .burger__line
+
+    &__line {
+        display: block;
+        width: rem(37);
+        height: rem(4);
+        background-color: var(--light-green);
+        transition: .5s;
+    }
+
+
+    @include l_screen() {
+        display: block;
+    }
+}
+
+
+.burger_active {
+    &::after {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    &::before {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    // .burger__line
+
+    .burger__line {
+        opacity: 0;
+        transition: 0;
+    }
+}

@@ -1,0 +1,219 @@
+.page {
+
+    // .page__slider
+
+    &__slider {
+        padding: rem(92) 0;
+    }
+}
+.slider {
+
+    // .slider__container
+
+    &__container {
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: rem(508);
+    display: flex;
+    @include md_screen() {
+        height: rem(592);
+    }
+    @include xs_screen() {
+        height: rem(622);
+    }
+}
+
+div.swiper-slide {
+    height: rem(440);
+    @include flex_column(rem(26));
+    @include md_screen() {
+        height: rem(536);
+    }
+    @include xs_screen() {
+        height: rem(566);
+    }
+  }
+
+#swiper-Btn-next {
+    opacity: 1;
+    z-index: 200;
+    bottom: 0;
+    top: auto;
+    right: calc(50% - rem(50));
+    transform: translateX(50%);
+    svg path {
+        transition: .4s;
+    }
+    &::after {
+        content: '';
+    }
+}
+
+#swiper-Btn-prev {
+    opacity: 1;
+    z-index: 200;
+    bottom: 0;
+    top: auto;
+    left: calc(50% - rem(50));
+    transform: translateX(-50%);
+    svg path {
+        transition: .4s;
+    }
+    &::after {
+        content: '';
+    }
+}
+#swiper-Btn-prev:hover,#swiper-Btn-next:hover {
+    svg path{
+        fill: var(--light-green);
+    }
+}
+div.swiper-pagination {
+    @include font_set(normal,rem(18),var(--gray));
+    letter-spacing: -2px;
+    z-index: -100;
+    span.swiper-pagination-current {
+        color: var(--default-text-color);
+    }
+
+}
+
+#slide {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    padding: rem(53) rem(63);
+    background-image: url('./../img/slideBg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(75deg, var(--slide-bg) 50%, transparent 50%);
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    @include md_screen() {
+        background-position: top right;
+        padding: rem(191) rem(23) rem(42) rem(23);
+        &::after {
+            background: linear-gradient(0deg, var(--slide-bg) 70%, transparent 50%);
+        }
+    }
+}
+
+.slide {
+
+    // .slide__content
+
+    &__content {
+        z-index: 222;
+    }
+
+    // .slide__title
+
+    &__title {
+        @include font_set(normal,rem(36),inherit,700);
+        text-transform: uppercase;
+        @include md_screen() {
+            font-size: rem(26);
+        }
+    }
+
+    // .slide__subTitle
+
+    &__subTitle {
+        @include font_set(normal,rem(22),inherit,700);
+        margin-bottom: em(16,22);
+        @include md_screen() {
+            font-size: rem(14);
+        }
+        @include md_screen() {
+            margin-bottom: em(16,17);
+        }
+    }
+
+    // .slide__services
+
+    &__services {
+        @include flex_column(rem(10));
+        margin-bottom: rem(33);
+        @include md_screen() {
+            margin-bottom: rem(27);
+        }
+    }
+
+    // .slide__service
+
+    &__service {
+        @include font_set(normal);
+        @include flex_row(em(9,16));
+        &::before {
+            display: inline-block;
+            content: '';
+            width: em(7,16);
+            height: em(7,16);
+            background-color: var(--light-green);
+            border-radius: 50%;
+        }
+    }
+
+    // .slide__price
+
+    &__price {
+        @include font_set(normal,rem(20));
+        @include flex_row(rem(16));
+        align-items: center;
+        &:after {
+            content: '3500₽';
+            @include font_set(150%,rem(16),var(--gray));
+            text-decoration: line-through;
+        }
+    }
+
+    // .slide__buttons
+
+    &__buttons {
+        @include flex_row(em(14,14));
+        z-index: 222;
+        button {
+            padding: em(11,14) em(58,14);
+            transition:.4s;
+            transition-property: background-color, color ;
+            @include md_screen() {
+                padding: em(11,14) em(29,14);
+            }
+        }
+        @include xs_screen() {
+            column-gap: em(5,14);
+            flex-wrap: wrap;
+            row-gap: em(5,14)
+        }
+    }
+}
+
+.slide__reg {
+    background-color: var(--light-green);
+    color: #FFF;
+}
+
+.slide__more {
+    box-shadow: inset 0 0 0 2px var(--light-green);
+    color: var(--light-green);
+}
+
+.slide__reg:hover {
+    background-color: var(--hover-green);
+}
+
+.slide__more:hover {
+    color: #FFF;
+    background-color: var(--light-green);
+}
+

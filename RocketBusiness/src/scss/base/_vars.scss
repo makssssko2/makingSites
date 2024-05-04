@@ -1,0 +1,32 @@
+// default html font-size (px)
+$default-fs: 16;
+
+// Media breakpoints
+$breakpoint-1: 1020px;
+$breakpoint-2: 790px;
+$breakpoint-3: 570px;
+$breakpoint-4: 450px;
+$breakpoint-5: 360px;
+
+:root{
+    // Without padding container width
+    --container-width: 1140px;
+    // paddings
+    --container-padding: 15px;
+    --default-ff:  "PT Sans Caption", sans-serif;;
+    --default-fw: 400;
+    --main-color: #364844;
+    --default-text-color: var(--main-color);
+    --default-bg: #FFF;
+    --section-bg: #F8FBFA;
+    --light-green: #0DBC91;
+    --nav-green: #1FA181;
+    --gray: #868686;
+    --light-gray: #E1E1E1;
+    --hover-green: #00D29F;
+    --transp-bg: rgba(69, 146, 127,0.9);
+    --button-bg: #F6F6F6;
+    --slide-bg: #E2F0EF;
+    --footer-bg: #08664F;
+    
+}

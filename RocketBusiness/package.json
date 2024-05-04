@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "gulp": "^5.0.0",
+    "gulp-changed": "^4.0.3",
+    "gulp-clean": "^0.4.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-server-livereload": "^1.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "sass": "^1.72.0",
+    "style-loader": "^3.3.4",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "air-datepicker": "^3.5.0",
+    "swiper": "^11.1.1"
+  }
+}

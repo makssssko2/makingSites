@@ -1,0 +1,22 @@
+html{
+    font-size: $default-fs + px;
+    font-family: var(--default-ff);
+    font-weight: var(--default-fw);
+    color: var(--default-text-color);
+    background-color: var(--default-bg);
+}
+.stop-scroll{
+    overflow: hidden;
+}
+.container{
+    max-width: calc(var(--container-width) + var(--container-padding) * 2);
+    padding-inline: var(--container-padding);
+    margin: 0 auto;
+}
+
+.button-default {
+    padding: 13px 23px;
+    border-radius: 50px;
+    transition: background-color .4s;
+    @include font_set(150%,rem(14));
+}

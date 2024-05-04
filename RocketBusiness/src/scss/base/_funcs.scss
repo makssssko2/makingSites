@@ -1,0 +1,7 @@
+@use 'sass:math';
+@function rem($pixels){
+    @return math.div($pixels, $default-fs) + rem;
+}
+@function em($pixels-el,$pixels-parent){
+    @return math.div($pixels-el, $pixels-parent) + em;
+}
